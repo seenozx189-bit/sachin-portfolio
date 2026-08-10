@@ -1,0 +1,409 @@
+{
+  "meta": {
+    "title": "Graphic Design",
+    "subtitle": "An exhibition of visuals",
+    "intro": "Brand visuals, posters and print — composition, colour and type treated as an art form. Scroll slowly."
+  },
+  "projects": [
+    {
+      "id": "graphic-01",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-01.webp",
+      "images": [
+        "/graphics/graphic-01.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "1402 / 1122"
+    },
+    {
+      "id": "graphic-02",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-02.webp",
+      "images": [
+        "/graphics/graphic-02.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "1833 / 2749"
+    },
+    {
+      "id": "graphic-03",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-03.webp",
+      "images": [
+        "/graphics/graphic-03.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "2068 / 2575"
+    },
+    {
+      "id": "graphic-04",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-04.webp",
+      "images": [
+        "/graphics/graphic-04.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "5694 / 8541"
+    },
+    {
+      "id": "graphic-05",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-05.webp",
+      "images": [
+        "/graphics/graphic-05.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "7872 / 2637"
+    },
+    {
+      "id": "graphic-06",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-06.webp",
+      "images": [
+        "/graphics/graphic-06.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "8255 / 5221"
+    },
+    {
+      "id": "graphic-07",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-07.webp",
+      "images": [
+        "/graphics/graphic-07.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "899 / 1513"
+    },
+    {
+      "id": "graphic-08",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-08.webp",
+      "images": [
+        "/graphics/graphic-08.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "4608 / 6144"
+    },
+    {
+      "id": "graphic-09",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-09.webp",
+      "images": [
+        "/graphics/graphic-09.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "1254 / 1254"
+    },
+    {
+      "id": "graphic-10",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-10.webp",
+      "images": [
+        "/graphics/graphic-10.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "4000 / 5000"
+    },
+    {
+      "id": "graphic-11",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-11.webp",
+      "images": [
+        "/graphics/graphic-11.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "4000 / 5000"
+    },
+    {
+      "id": "graphic-12",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-12.webp",
+      "images": [
+        "/graphics/graphic-12.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "2196 / 900"
+    },
+    {
+      "id": "graphic-13",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-13.webp",
+      "images": [
+        "/graphics/graphic-13.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "2196 / 900"
+    },
+    {
+      "id": "graphic-14",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-14.webp",
+      "images": [
+        "/graphics/graphic-14.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "2196 / 900"
+    },
+    {
+      "id": "graphic-15",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-15.webp",
+      "images": [
+        "/graphics/graphic-15.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "2196 / 900"
+    },
+    {
+      "id": "graphic-16",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-16.webp",
+      "images": [
+        "/graphics/graphic-16.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "2196 / 900"
+    },
+    {
+      "id": "graphic-17",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-17.webp",
+      "images": [
+        "/graphics/graphic-17.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "1881 / 1881"
+    },
+    {
+      "id": "graphic-18",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-18.webp",
+      "images": [
+        "/graphics/graphic-18.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "1464 / 3000"
+    },
+    {
+      "id": "graphic-19",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-19.webp",
+      "images": [
+        "/graphics/graphic-19.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "2196 / 4500"
+    },
+    {
+      "id": "graphic-20",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-20.webp",
+      "images": [
+        "/graphics/graphic-20.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "900 / 3375"
+    },
+    {
+      "id": "graphic-21",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-21.webp",
+      "images": [
+        "/graphics/graphic-21.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "1924 / 2883"
+    },
+    {
+      "id": "graphic-22",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-22.webp",
+      "images": [
+        "/graphics/graphic-22.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "4536 / 6048"
+    },
+    {
+      "id": "graphic-23",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-23.webp",
+      "images": [
+        "/graphics/graphic-23.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "4536 / 6048"
+    },
+    {
+      "id": "graphic-24",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-24.webp",
+      "images": [
+        "/graphics/graphic-24.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "4536 / 6048"
+    },
+    {
+      "id": "graphic-25",
+      "title": "",
+      "client": "",
+      "year": "",
+      "category": "",
+      "description": "",
+      "cover": "/graphics/graphic-25.webp",
+      "images": [
+        "/graphics/graphic-25.webp"
+      ],
+      "tags": [],
+      "software": [],
+      "featured": false,
+      "ratio": "941 / 1672"
+    }
+  ]
+}

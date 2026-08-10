@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "eyebrow": "SOCIAL MEDIA / CONTENT / CREATIVE",
+    "headline": [
+      { "text": "I DON'T JUST", "style": "solid" },
+      { "text": "MANAGE SOCIALS.", "style": "outline" },
+      { "text": "I BUILD THE", "style": "solid" },
+      { "text": "WHOLE THING.", "style": "accent" }
+    ],
+    "description": "A creative social media manager who can take an idea from “what if?” to published content — strategy, trends, copy, design, video and performance.",
+    "pipeline": ["Strategy", "Trend Hunting", "Ideas", "Design", "Video", "Publishing", "Growth"],
+    "primaryCta": "View My System",
+    "secondaryCta": "Let's Work",
+    "image": "/social/hero-collage.png",
+    "imageRatio": "349 / 494",
+    "imageLabel": "ONE-MAN SOCIAL MEDIA ARMY",
+    "imageCaption": "CREATIVE SOCIAL MEDIA MANAGER / CONTENT STRATEGIST",
+    "video": "/social/hero-bg.mp4"
+  },
+  "pipeline": [
+    { "num": "01", "title": "Strategy", "note": "Goals, audience, angle" },
+    { "num": "02", "title": "Trend Hunting", "note": "What's moving now" },
+    { "num": "03", "title": "Ideas", "note": "Hooks worth stopping for" },
+    { "num": "04", "title": "Design", "note": "Look, layout, identity" },
+    { "num": "05", "title": "Video", "note": "Shoot, cut, grade" },
+    { "num": "06", "title": "Publishing", "note": "Calendar & captions" },
+    { "num": "07", "title": "Growth", "note": "Measure & scale" }
+  ],
+  "why": {
+    "title": "WHY SOCIAL?",
+    "intro": "Posting consistently is the easy part. The hard part is earning attention and turning a feed into a position in someone's mind.",
+    "blocks": [
+      { "num": "01", "title": "Design", "copy": "Strong visual identity is what makes a feed instantly recognisable." },
+      { "num": "02", "title": "Education", "copy": "Teach what you're best at — value first is what earns the follow." },
+      { "num": "03", "title": "Attention", "copy": "Three seconds decides everything. The hook is the whole game." },
+      { "num": "04", "title": "Social Trends", "copy": "Native, timely and relevant to the platform and the moment." },
+      { "num": "05", "title": "Content", "copy": "A system of ideas — not random posts uploaded the night before." }
+    ]
+  },
+  "engine": {
+    "title": "CONTENT IS NOT RANDOM.",
+    "intro": "Every post is the output of a repeatable system — spot it, understand it, angle it, ship it, learn from it.",
+    "steps": ["Spot It", "Understand It", "Find The Brand Angle", "Build", "Publish", "Measure", "Repeat"]
+  },
+  "pillars": [
+    { "num": "01", "name": "Culture", "copy": "Timely, relevant, native to the platform and the moment." },
+    { "num": "02", "name": "Education", "copy": "Teach the thing you're best at. Value first, always." },
+    { "num": "03", "name": "Entertainment", "copy": "Watchable and shareable — the reason people stay." },
+    { "num": "04", "name": "Brand", "copy": "The offer and identity, woven into the story." },
+    { "num": "05", "name": "Community", "copy": "Content made with the audience, not just for them." },
+    { "num": "06", "name": "Experimentation", "copy": "Deliberate tests that find the next thing that works." }
+  ],
+  "accounts": [
+    {
+      "handle": "@eatingmonk",
+      "url": "https://www.instagram.com/eatingmonk",
+      "description": "Food, travel & lifestyle — content strategy, creative direction and full account management.",
+      "image": "/social/accounts/eatingmonk.jpg"
+    },
+    {
+      "handle": "@chokkha_foods",
+      "url": "https://www.instagram.com/chokkha_foods",
+      "description": "Homemade food brand — end-to-end social media, content production and community growth.",
+      "image": "/social/accounts/chokkha_foods.jpg"
+    }
+  ],
+  "formats": [
+    "Reels", "Carousels", "Static Posts", "Stories",
+    "Short-Form Video", "Motion Graphics", "Campaigns"
+  ],
+  "thirtyDay": [
+    { "num": "01", "title": "Audit", "copy": "Read the account, audience and numbers honestly." },
+    { "num": "02", "title": "Build", "copy": "Lock the angle and produce the first batch." },
+    { "num": "03", "title": "Experiment", "copy": "Test hooks, formats and timing deliberately." },
+    { "num": "04", "title": "Double Down", "copy": "Scale the formats that clearly earned attention." },
+    { "num": "05", "title": "Optimize", "copy": "Cut what didn't work, sharpen what did." }
+  ],
+  "loop": ["Create", "Measure", "Learn", "Improve"],
+  "metrics": [
+    "Reach", "Engagement", "Watch Time", "Retention",
+    "Saves", "Shares", "Follower Growth", "Profile Visits"
+  ],
+  "tools": [
+    "Instagram", "YouTube", "LinkedIn", "Meta Business Suite", "Canva",
+    "Figma", "Adobe Premiere Pro", "After Effects", "CapCut", "Analytics"
+  ],
+  "services": [
+    { "title": "Strategy", "copy": "Positioning, pillars and a plan tied to real goals." },
+    { "title": "Content", "copy": "Ideas, hooks and scripts built around your audience." },
+    { "title": "Design", "copy": "Carousels, posts and thumbnails with a consistent identity." },
+    { "title": "Video", "copy": "Reels and short-form edited for retention, not just reach." },
+    { "title": "Publishing", "copy": "Calendar, captions and cadence handled end to end." },
+    { "title": "Community", "copy": "Replies and DMs that compound over time." },
+    { "title": "Analytics", "copy": "Clear reads on what worked — and what's next." },
+    { "title": "Optimization", "copy": "Continuous testing that turns signals into growth." }
+  ],
+  "positioning": {
+    "lines": ["I CAME FROM DESIGN.", "I LEARNED CONTENT.", "NOW I BUILD SYSTEMS."],
+    "copy": "Most social managers can post. Fewer can design, edit, brand and read performance. I sit across all of it, so the whole pipeline is one person and one standard — not a scheduler, a system.",
+    "traits": ["Design", "Video", "Content", "Social"]
+  },
+  "cta": {
+    "lines": ["GIVE ME THE ACCOUNT.", "LET'S SEE WHAT HAPPENS."],
+    "button": "LET'S WORK"
+  }
+}

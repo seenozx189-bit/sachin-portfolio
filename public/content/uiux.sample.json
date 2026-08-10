@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "UI/UX Design",
+    "subtitle": "Interfaces with intent",
+    "intro": "Research-driven product design — flows, systems and interfaces built to feel effortless. Read the thinking, not just the screens."
+  },
+  "projects": [
+    {
+      "id": "job-portal",
+      "title": "Job Portal",
+      "subtitle": "Making the job hunt feel effortless",
+      "client": "Concept / Case Study",
+      "year": "2024",
+      "role": "Product Designer — Research to UI",
+      "duration": "6 weeks",
+      "device": "desktop",
+      "tools": ["Figma", "FigJam", "Photoshop"],
+      "cover": "/images/work-jobportal.jpg",
+      "hero": "/images/work-jobportal.jpg",
+      "overview": "An end-to-end job platform designed so discovery feels effortless and applying takes seconds. The work spans research, flows, wireframes, a design system and a high-fidelity prototype.",
+      "problem": "Seekers abandon portals when search feels heavy and applications take too many steps. The interface needed to make discovery effortless and applying obvious — without burying people in filters.",
+      "research": "I interviewed eight active job seekers and mapped their journey end to end. Three friction points dominated: noisy, unclear filters; job cards that hid the details people actually decide on; and multi-page application forms that killed momentum right before submission.",
+      "researchStats": [
+        { "value": 8, "suffix": "", "label": "User interviews" },
+        { "value": 73, "suffix": "%", "label": "Abandoned long forms" },
+        { "value": 3, "suffix": "", "label": "Core friction points" },
+        { "value": 42, "suffix": "s", "label": "Avg. time-to-apply target" }
+      ],
+      "personas": [
+        { "name": "Aisha", "role": "Recent Graduate", "bio": "First real job hunt, applies in bursts on mobile between classes.", "goals": ["Apply fast", "Track applications", "Filter by remote"], "frustrations": ["Long forms", "Unclear job status", "Repetitive data entry"] },
+        { "name": "Marcus", "role": "Career Switcher", "bio": "Five years in, moving industries and comparing roles carefully.", "goals": ["Compare salaries", "Save roles", "Understand fit"], "frustrations": ["Vague listings", "No comparison view", "Hidden requirements"] }
+      ],
+      "userFlow": [
+        { "label": "Landing", "note": "Search intent" },
+        { "label": "Results", "note": "Smart filters" },
+        { "label": "Job detail", "note": "Decide fast" },
+        { "label": "Apply", "note": "One screen" },
+        { "label": "Confirmed", "note": "Track status" }
+      ],
+      "wireframes": ["/images/work-jobportal.jpg", "/images/work-tees.jpg", "/images/work-chokkha.jpg"],
+      "designs": ["/images/work-jobportal.jpg", "/images/work-nonames.jpg"],
+      "prototype": "/images/work-jobportal.jpg",
+      "prototypeUrl": "",
+      "results": [
+        { "value": 38, "suffix": "%", "label": "Faster task completion (test)" },
+        { "value": 2, "suffix": "-tap", "label": "Apply flow" },
+        { "value": 12, "suffix": "", "label": "Reusable components" },
+        { "value": 96, "suffix": "%", "label": "Prototype task success" }
+      ],
+      "feedback": { "quote": "The apply flow finally feels like it respects the candidate's time.", "name": "Test participant", "role": "Career switcher" },
+      "gallery": ["/images/work-jobportal.jpg", "/images/work-nonames.jpg", "/images/work-tees.jpg", "/images/work-chokkha.jpg"],
+      "tags": ["Product Design", "Design System", "Prototyping", "Responsive"],
+      "featured": true
+    },
+    {
+      "id": "merch-commerce",
+      "title": "Merch Commerce",
+      "subtitle": "A streetwear drop that checks out in two taps",
+      "client": "Concept",
+      "year": "2024",
+      "role": "UX & UI Designer",
+      "duration": "4 weeks",
+      "device": "phone",
+      "tools": ["Figma", "Illustrator"],
+      "cover": "/images/work-tees.jpg",
+      "hero": "/images/work-tees.jpg",
+      "overview": "A limited-drop commerce experience built around urgency without chaos — browse, pick a size and check out before the hype fades.",
+      "problem": "Limited drops create pressure. If size selection or checkout stalls for even a moment, carts are abandoned. The flow had to feel instant and confident.",
+      "research": "I studied drop culture and cart-abandonment patterns across five stores. The recurring winner was a countdown-led hero paired with a two-tap size-and-checkout path that never leaves the product context.",
+      "researchStats": [
+        { "value": 5, "suffix": "", "label": "Stores studied" },
+        { "value": 68, "suffix": "%", "label": "Abandon at checkout" },
+        { "value": 2, "suffix": "-tap", "label": "Target purchase" }
+      ],
+      "personas": [
+        { "name": "Rhea", "role": "Hype Buyer", "bio": "Follows drops, buys in the first minutes, shops on mobile only.", "goals": ["Buy before sellout", "Instant checkout", "Size confidence"], "frustrations": ["Slow carts", "Re-entering address", "Size uncertainty"] }
+      ],
+      "userFlow": [
+        { "label": "Drop hero", "note": "Countdown" },
+        { "label": "Product", "note": "Quick size" },
+        { "label": "Cart drawer", "note": "Stays in place" },
+        { "label": "Checkout", "note": "One screen" },
+        { "label": "Success", "note": "Order tracked" }
+      ],
+      "wireframes": ["/images/work-tees.jpg", "/images/work-chokkha.jpg"],
+      "designs": ["/images/work-tees.jpg", "/images/work-jobportal.jpg"],
+      "prototype": "/images/work-tees.jpg",
+      "prototypeUrl": "",
+      "results": [
+        { "value": 2, "suffix": "-tap", "label": "Checkout achieved" },
+        { "value": 44, "suffix": "%", "label": "Fewer steps than baseline" },
+        { "value": 9, "suffix": "", "label": "Screens in system" }
+      ],
+      "feedback": { "quote": "It feels like the product never lets go of you until you've bought it.", "name": "Usability tester", "role": "Hype buyer" },
+      "gallery": ["/images/work-tees.jpg", "/images/work-chokkha.jpg", "/images/work-jobportal.jpg"],
+      "tags": ["E-commerce", "Mobile-first", "Motion", "Checkout"],
+      "featured": false
+    },
+    {
+      "id": "content-studio",
+      "title": "Content Studio",
+      "subtitle": "A calm command center for a chaotic content calendar",
+      "client": "Chokkha Foods",
+      "year": "2025",
+      "role": "Product Designer",
+      "duration": "5 weeks",
+      "device": "tablet",
+      "tools": ["Figma", "FigJam"],
+      "cover": "/images/work-chokkha.jpg",
+      "hero": "/images/work-chokkha.jpg",
+      "overview": "A content-operations dashboard that turns a high-volume social calendar into a calm, glanceable system — status at a glance, fast handoffs, zero guesswork.",
+      "problem": "A high-volume brand shipped content weekly but had no single view of what was live, drafted or overdue. Status lived in people's heads and DMs.",
+      "research": "I shadowed the content team through two full weeks. The core need was status-at-a-glance and frictionless handoffs — the tool had to fit their existing rituals, not replace them.",
+      "researchStats": [
+        { "value": 2, "suffix": "wk", "label": "Shadowing sessions" },
+        { "value": 40, "suffix": "+", "label": "Posts per week" },
+        { "value": 4, "suffix": "", "label": "Handoff stages" }
+      ],
+      "personas": [
+        { "name": "Devi", "role": "Content Lead", "bio": "Owns the calendar, unblocks the team, reports to the brand.", "goals": ["See everything", "Spot overdue work", "Approve fast"], "frustrations": ["Scattered status", "Slow approvals", "Lost assets"] },
+        { "name": "Sam", "role": "Editor", "bio": "Turns briefs into finished reels and creatives at volume.", "goals": ["Clear briefs", "Quick handoff", "Asset access"], "frustrations": ["Vague feedback", "Version chaos", "Context switching"] }
+      ],
+      "userFlow": [
+        { "label": "Board", "note": "Week at a glance" },
+        { "label": "Brief", "note": "Assign + spec" },
+        { "label": "Draft", "note": "Upload + preview" },
+        { "label": "Review", "note": "Approve inline" },
+        { "label": "Scheduled", "note": "Auto-publish" }
+      ],
+      "wireframes": ["/images/work-chokkha.jpg", "/images/work-jobportal.jpg"],
+      "designs": ["/images/work-chokkha.jpg", "/images/work-tees.jpg"],
+      "prototype": "/images/work-chokkha.jpg",
+      "prototypeUrl": "",
+      "results": [
+        { "value": 55, "suffix": "%", "label": "Faster approvals (est.)" },
+        { "value": 1, "suffix": "", "label": "Source of truth" },
+        { "value": 18, "suffix": "", "label": "Components shipped" }
+      ],
+      "feedback": { "quote": "For the first time the whole team can see the week without asking anyone.", "name": "Content lead", "role": "Chokkha Foods" },
+      "gallery": ["/images/work-chokkha.jpg", "/images/work-jobportal.jpg", "/images/work-tees.jpg", "/images/work-nonames.jpg"],
+      "tags": ["Dashboard", "SaaS", "Workflow", "Design System"],
+      "featured": false
+    }
+  ]
+}

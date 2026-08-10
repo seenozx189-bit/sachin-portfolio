@@ -1,12 +1,10 @@
-# Operating System Files
+node_modules/
+.next/
+out/
+.env
+.env.local
+.env*.local
+.vercel/
 .DS_Store
 Thumbs.db
-desktop.ini
-
-# Editor directories
-.vscode/
-.idea/
-
-# Node / Temp (if any in future)
-node_modules/
 *.log
