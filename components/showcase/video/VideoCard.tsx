@@ -25,7 +25,7 @@ export default function VideoCard({
   return (
     <figure
       className="vc"
-      style={{ '--w': `${slot.w}vw`, '--ratio': slot.ratio, '--offset': `${slot.offset}vh` } as React.CSSProperties}
+      style={{ '--offset': `${slot.offset}vh` } as React.CSSProperties}
     >
       <button
         ref={innerRef}

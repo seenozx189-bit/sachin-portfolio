@@ -208,7 +208,7 @@ export default function Home() {
           <article className="project-card project-wide" data-reveal="project" data-cursor-label="VIEW">
             <Link href="/project/tees-merch-designs">
               <div className="project-image-wrap">
-                <img src="/images/work-tees.jpg" alt="Tee’s Merch Designs cover visual" className="project-image" loading="lazy" />
+                <img src="/images/tees-replacement.webp" alt="Tee’s Merch Designs cover visual" className="project-image" loading="lazy" />
                 <span className="project-arrow" aria-hidden="true">↗</span>
               </div>
               <div className="project-meta">

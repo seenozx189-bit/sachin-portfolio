@@ -83,6 +83,8 @@ export function splitReveal(
     delay,
     ease: 'power4.out',
     stagger,
+    // Release the compositor layer once revealed — don't leave will-change on.
+    onComplete: () => targets.forEach((n) => ((n as HTMLElement).style.willChange = 'auto')),
     ...(scrollTrigger
       ? { scrollTrigger: { trigger: el as Element, start, once: true, scroller: scroller ?? undefined } }
       : {}),

@@ -13,7 +13,9 @@ export function useJsonContent<T>(path: string): ContentState<T> {
 
   useEffect(() => {
     let alive = true;
-    fetch(path, { cache: 'force-cache' })
+    // Revalidate against the server so content edits (JSON/images) show up,
+    // instead of pinning a stale copy with force-cache.
+    fetch(path, { cache: 'no-cache' })
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json() as Promise<T>;

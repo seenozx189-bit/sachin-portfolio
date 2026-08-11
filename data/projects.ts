@@ -23,7 +23,7 @@ export const projects: Record<string, Project> = {
     client: 'Independent / Freelance',
     year: '2024',
     tools: 'Adobe Illustrator, Adobe Photoshop, Figma',
-    image: '/images/work-tees.jpg',
+    image: '/images/tees-replacement.webp',
     overview: 'A collection of merchandise graphics — typographic tees, print placements and mockup presentations — designed for small apparel drops and personal brand merch.',
     challenge: 'Create apparel graphics that read instantly from a distance, survive real print constraints, and still feel collectible rather than generic.',
     approach: 'Started from typographic experiments and distressed textures, then locked a visual direction with a tight palette and a repeatable layout system across the drop.',

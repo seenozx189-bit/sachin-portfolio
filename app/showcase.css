@@ -409,7 +409,7 @@ body.is-loading { overflow: hidden; }
     radial-gradient(60rem 60rem at 15% 8%, rgba(255, 92, 56, 0.10), transparent 60%),
     radial-gradient(50rem 50rem at 90% 80%, rgba(120, 90, 255, 0.09), transparent 60%);
 }
-.gfx-bg__blob { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.5; will-change: transform; }
+.gfx-bg__blob { position: absolute; border-radius: 50%; filter: blur(34px); opacity: 0.5; will-change: transform; }
 .gfx-bg__blob--a { top: 6%; left: 8%; width: 34vw; height: 34vw; background: radial-gradient(circle, rgba(255,92,56,0.5), transparent 70%); }
 .gfx-bg__blob--b { bottom: 4%; right: 6%; width: 40vw; height: 40vw; background: radial-gradient(circle, rgba(110,80,255,0.42), transparent 70%); }
 .gfx-bg__grain {
@@ -498,7 +498,6 @@ body.is-loading { overflow: hidden; }
   text-align: left;
   color: inherit;
   transform-style: preserve-3d;
-  will-change: transform;
 }
 .gfx-card__frame {
   position: relative;
@@ -560,7 +559,6 @@ body.is-loading { overflow: hidden; }
   text-transform: uppercase;
   color: var(--text);
   white-space: nowrap;
-  will-change: transform;
 }
 
 /* Outro */
@@ -581,24 +579,31 @@ body.is-loading { overflow: hidden; }
   z-index: 1;
   height: 100%;
   display: grid;
-  grid-template-columns: 1.55fr 1fr;
-  gap: clamp(1.5rem, 4vw, 4rem);
+  /* Details column is `auto` — it collapses to its content, so when metadata
+     is empty the artwork gets the full width instead of a wasted 40% panel. */
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1rem, 3vw, 3rem);
   align-items: center;
-  padding: clamp(1.5rem, 5vw, 5rem) clamp(1.5rem, 5vw, 5rem);
+  justify-items: center;
+  padding: clamp(1.5rem, 4vw, 4rem);
 }
-.gfx-viewer__stage-wrap { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 1.2rem; min-height: 0; }
-.gfx-viewer__stage {
-  position: relative;
-  width: 100%;
-  height: min(80vh, 100%);
-  overflow: hidden;
+.gfx-viewer__stage-wrap { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1.2rem; min-height: 0; }
+/* Full-resolution artwork sized to its own aspect ratio, contained within the
+   available area — never cropped, never upscaled past its natural size. */
+.gfx-viewer__img-live {
+  display: block;
+  max-width: 100%;
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   border-radius: 6px;
   background: var(--surface);
-  box-shadow: 0 60px 130px -40px rgba(0,0,0,0.95);
-  will-change: transform;
+  box-shadow: 0 60px 130px -40px rgba(0, 0, 0, 0.95);
   touch-action: pan-y;
+  user-select: none;
+  -webkit-user-drag: none;
 }
-.gfx-viewer__img-live { object-fit: cover; }
 .gfx-viewer__nav { display: flex; align-items: center; gap: 1.4rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.78rem; }
 .gfx-viewer__nav button {
   width: 46px; height: 46px; border-radius: 50%;
@@ -640,7 +645,7 @@ body.is-loading { overflow: hidden; }
   .gfx-card__cap { transform: none; }
   .gfx-card.is-overlap { margin-top: clamp(3rem, 7vw, 6rem); }
   .gfx-viewer__layout { grid-template-columns: 1fr; align-content: start; overflow-y: auto; padding-block: 4.5rem; }
-  .gfx-viewer__stage { height: 46vh; }
+  .gfx-viewer__img-live { max-width: 90vw; max-height: 70vh; }
   .gfx-viewer__detail { max-width: none; }
   .gfx-divider { height: 42vh; }
 }
@@ -738,13 +743,13 @@ body.is-loading { overflow: hidden; }
 .hr-empty { width: var(--shell); margin: 4rem auto; padding: 4rem; text-align: center; color: var(--muted); border: 1px dashed var(--line); }
 
 /* Video card */
-.vc { flex-shrink: 0; width: var(--w, 42vw); margin: 0; transform: translateY(var(--offset, 0)); perspective: 1200px; }
+.vc { flex-shrink: 0; width: clamp(210px, 33vh, 300px); margin: 0; transform: translateY(var(--offset, 0)); perspective: 1200px; }
 .vc-inner {
   display: block; width: 100%; padding: 0; border: 0; background: transparent; text-align: left; color: inherit;
   transform-style: preserve-3d; will-change: transform;
 }
 .vc-media {
-  position: relative; width: 100%; aspect-ratio: var(--ratio, 16 / 9);
+  position: relative; width: 100%; aspect-ratio: 9 / 16;
   overflow: hidden; border-radius: 6px; background: var(--surface);
   box-shadow: 0 34px 70px -46px rgba(0,0,0,0.9); transition: box-shadow 0.5s ease;
 }
@@ -783,7 +788,7 @@ body.is-loading { overflow: hidden; }
 .vp-backdrop { position: absolute; inset: 0; background: rgba(4,4,6, calc(var(--vp-bd) * 0.85)); backdrop-filter: blur(calc(var(--vp-bd) * 20px)); -webkit-backdrop-filter: blur(calc(var(--vp-bd) * 20px)); }
 .vp-layout { position: relative; z-index: 1; height: 100%; display: grid; grid-template-columns: 1.6fr 1fr; gap: clamp(1.5rem, 4vw, 4rem); align-items: center; padding: clamp(1.5rem, 5vw, 5rem); }
 .vp-stage-wrap { display: flex; flex-direction: column; gap: 1.1rem; min-width: 0; }
-.vp-stage { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 8px; background: #000; box-shadow: 0 60px 130px -40px rgba(0,0,0,0.95); will-change: transform; }
+.vp-stage { position: relative; height: min(78vh, 150vw); aspect-ratio: 9 / 16; width: auto; margin-inline: auto; overflow: hidden; border-radius: 8px; background: #000; box-shadow: 0 60px 130px -40px rgba(0,0,0,0.95); will-change: transform; }
 .vp-stage .vp-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .vp-nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--muted); font-family: var(--font-mono); font-size: 0.76rem; }
 .vp-nav button { padding: 0.55rem 1rem; border: 1px solid var(--line-strong); border-radius: 999px; background: transparent; color: var(--text); transition: border-color 0.3s, color 0.3s; }
@@ -810,8 +815,8 @@ body.is-loading { overflow: hidden; }
 @media (max-width: 900px) {
   .hr { height: auto; overflow: visible; }
   .hr-track { flex-direction: column; align-items: stretch; width: auto; height: auto; gap: 3rem; padding-block: 2rem; }
-  .vc { width: 100% !important; transform: none !important; }
-  .vc-media { aspect-ratio: 16 / 9 !important; }
+  .vc { width: min(70vw, 300px) !important; transform: none !important; }
+  .vc-media { aspect-ratio: 9 / 16 !important; }
   .hr-intro { margin-right: 0; }
   .fr-stage { aspect-ratio: 16 / 9; max-height: none; }
   .vp-layout { grid-template-columns: 1fr; align-content: start; overflow-y: auto; padding-block: 4.5rem; }
