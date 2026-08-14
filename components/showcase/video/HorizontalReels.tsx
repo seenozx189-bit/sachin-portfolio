@@ -45,7 +45,7 @@ export default function HorizontalReels({
           <em>Drag your eyes across the reel →</em>
         </div>
         {projects.map((p, i) => (
-          <VideoCard key={p.id} project={p} slot={railSlot(i)} index={i} onOpen={onOpen} />
+          <VideoCard key={p.id} project={p} slot={railSlot(i)} onOpen={onOpen} />
         ))}
         <div className="hr-end"><span>Fin.</span></div>
       </div>

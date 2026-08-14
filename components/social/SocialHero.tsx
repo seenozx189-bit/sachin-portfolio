@@ -57,6 +57,22 @@ export default function SocialHero({ full = false }: { full?: boolean }) {
     return () => v.removeEventListener('canplay', tryPlay);
   }, []);
 
+  // Pause the ambient hero video whenever it scrolls out of view, resume when
+  // it comes back — same footage, no wasted decode while nothing sees it.
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) v.play().catch(() => {});
+        else v.pause();
+      },
+      { threshold: 0.1 }
+    );
+    obs.observe(v);
+    return () => obs.disconnect();
+  }, []);
+
   const Primary = full
     ? (p: { className: string; children: React.ReactNode }) => (
         <a href="#sm-pipeline" className={p.className} data-cursor="button">{p.children}</a>
@@ -72,6 +88,7 @@ export default function SocialHero({ full = false }: { full?: boolean }) {
           <video
             ref={videoRef}
             src={hero.video}
+            poster={hero.image || undefined}
             autoPlay
             muted
             loop

@@ -6,6 +6,12 @@ export type Project = {
   year: string;
   tools: string;
   image: string;
+  // Gallery images below the cover. Defaults to repeating `image` (existing
+  // behaviour) when omitted, so other projects are unaffected.
+  gallery?: string[];
+  // 'cover' (default, existing behaviour) or 'contain' for artwork whose
+  // aspect ratio shouldn't be cropped to the fixed gallery tile.
+  galleryFit?: 'cover' | 'contain';
   overview: string;
   challenge: string;
   approach: string;
@@ -24,6 +30,17 @@ export const projects: Record<string, Project> = {
     year: '2024',
     tools: 'Adobe Illustrator, Adobe Photoshop, Figma',
     image: '/images/tees-replacement.webp',
+    gallery: [
+      '/tees/tee-01.webp',
+      '/tees/tee-02.webp',
+      '/tees/tee-03.webp',
+      '/tees/tee-04.webp',
+      '/tees/tee-05.webp',
+      '/tees/tee-06.webp',
+      '/tees/tee-07.webp',
+      '/tees/tee-08.webp',
+    ],
+    galleryFit: 'contain',
     overview: 'A collection of merchandise graphics — typographic tees, print placements and mockup presentations — designed for small apparel drops and personal brand merch.',
     challenge: 'Create apparel graphics that read instantly from a distance, survive real print constraints, and still feel collectible rather than generic.',
     approach: 'Started from typographic experiments and distressed textures, then locked a visual direction with a tight palette and a repeatable layout system across the drop.',

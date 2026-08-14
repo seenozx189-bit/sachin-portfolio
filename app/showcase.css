@@ -8,7 +8,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10000;
+  /* Must stay above every overlay in the app — the highest is .loader at
+     10050, so the cursor sits one above that. Without this, fullscreen
+     layers like .vp/.gfx-viewer/.csr (10040) render on top of it. */
+  z-index: 10060;
   pointer-events: none;
   opacity: 0;
   border-radius: 50%;

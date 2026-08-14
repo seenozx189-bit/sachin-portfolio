@@ -31,7 +31,7 @@ const DeviceMockup = forwardRef<HTMLDivElement, Props>(function DeviceMockup(
           {scrollable ? (
             <div className="device__scroll">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={src} alt={alt} loading="lazy" />
+              <img src={src} alt={alt} loading="lazy" decoding="async" />
             </div>
           ) : (
             <Image src={src} alt={alt} fill sizes={sizes} priority={priority} className="device__img" />

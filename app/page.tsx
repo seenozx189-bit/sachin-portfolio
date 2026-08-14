@@ -109,27 +109,64 @@ export default function Home() {
             <strong className="timeline-organisation">Udemy</strong>
             <p>Completed front-end web development learning and training through Udemy, adding code fluency to a design-led workflow.</p>
             <span className="timeline-period">2024</span>
+            <a
+              href="https://pizzawebprz.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="timeline-row-link"
+              aria-label="View front-end web development work (opens in a new tab)"
+            />
           </article>
           <article className="timeline-row" data-reveal="row" style={{ '--delay': '65ms' } as React.CSSProperties}>
             <span className="timeline-index">02</span>
-            <h3><a href="https://www.behance.net/seenozx079" target="_blank" rel="noopener noreferrer" className="timeline-title-link">UI/UX designer ↗</a></h3>
+            <h3>UI/UX designer</h3>
             <strong className="timeline-organisation">Intuch Group Quality Service</strong>
-            <p>Focused on digital interfaces and user experiences: wireframes, prototypes, and visual design across products. <a href="https://www.behance.net/seenozx079" target="_blank" rel="noopener noreferrer" className="inline-work-link">View Behance ↗</a></p>
+            <p>Focused on digital interfaces and user experiences: wireframes, prototypes, and visual design across products.</p>
             <span className="timeline-period">—</span>
+            <TransitionLink
+              href="/work/uiux"
+              transitionLabel="UI/UX Design"
+              className="timeline-row-link"
+              aria-label="View UI/UX design work"
+            />
           </article>
           <article className="timeline-row" data-reveal="row" style={{ '--delay': '130ms' } as React.CSSProperties}>
             <span className="timeline-index">03</span>
-            <h3>Graphic designer &amp; video editor</h3>
+            <h3>
+              <TransitionLink
+                href="/work/graphic-design"
+                transitionLabel="Graphic Design"
+                className="timeline-row-inline-link"
+                aria-label="View graphic design work"
+              >
+                Graphic designer
+              </TransitionLink>{' '}
+              &amp;{' '}
+              <TransitionLink
+                href="/work/video-editing"
+                transitionLabel="Video Editing"
+                className="timeline-row-inline-link"
+                aria-label="View video editing work"
+              >
+                video editor
+              </TransitionLink>
+            </h3>
             <strong className="timeline-organisation">Chokkha Foods &amp; NoNames</strong>
-            <p>Creating brand visuals, social media content, product creatives and teaser/reel video content. View <a href="https://drive.google.com/file/d/10srS0EIxnKd-d3qkvcK3rLpTUscZm-Gv/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-work-link">Graphics on Drive ↗</a> or <a href="https://www.behance.net/seenozx079" target="_blank" rel="noopener noreferrer" className="inline-work-link">Videos on Behance ↗</a></p>
+            <p>Creating brand visuals, social media content, product creatives and teaser/reel video content.</p>
             <span className="timeline-period">Present</span>
           </article>
           <article className="timeline-row" data-reveal="row" style={{ '--delay': '195ms' } as React.CSSProperties}>
             <span className="timeline-index">04</span>
             <h3>Freelance creative work</h3>
             <strong className="timeline-organisation">Independent</strong>
-            <p>Projects across design, branding, graphics, social media content and video editing for clients and personal ventures. <a href="https://www.behance.net/seenozx079" target="_blank" rel="noopener noreferrer" className="inline-work-link">Behance ↗</a> · <a href="https://drive.google.com/file/d/10srS0EIxnKd-d3qkvcK3rLpTUscZm-Gv/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-work-link">Drive ↗</a></p>
+            <p>Projects across design, branding, graphics, social media content and video editing for clients and personal ventures.</p>
             <span className="timeline-period">Ongoing</span>
+            <TransitionLink
+              href="/work/freelance"
+              transitionLabel="Freelance"
+              className="timeline-row-link"
+              aria-label="View freelance creative work"
+            />
           </article>
         </div>
       </section>

@@ -76,14 +76,17 @@ export default async function ProjectPage({ params }: Props) {
           </div>
         </section>
         <div className="case-gallery">
-          <div data-reveal="project">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img id="gallery-1" src={project.image} alt={`${project.title} gallery visual 1`} />
-          </div>
-          <div data-reveal="project" style={{ '--delay': '90ms' } as React.CSSProperties}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img id="gallery-2" src={project.image} alt={`${project.title} gallery visual 2`} />
-          </div>
+          {(project.gallery && project.gallery.length ? project.gallery : [project.image, project.image]).map((src, i) => (
+            <div
+              key={src + i}
+              data-reveal="project"
+              className={project.galleryFit === 'contain' ? 'case-gallery__tile--contain' : undefined}
+              style={{ '--delay': `${i * 90}ms` } as React.CSSProperties}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img id={`gallery-${i + 1}`} src={src} alt={`${project.title} gallery visual ${i + 1}`} />
+            </div>
+          ))}
         </div>
         <Link className="next-project" id="next-project" href={`/project/${project.next}`} data-reveal="up">
           <span>Next project</span><strong id="next-title">{project.nextTitle}</strong><i aria-hidden="true">↗</i>

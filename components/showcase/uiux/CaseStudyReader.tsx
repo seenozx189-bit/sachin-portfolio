@@ -337,7 +337,7 @@ export default function CaseStudyReader({
               {project.wireframes.map((src, i) => (
                 <figure key={src + i} className="csr-wire" style={{ zIndex: project.wireframes.length - i } as React.CSSProperties}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={src} alt={`${project.title} wireframe ${i + 1}`} loading="lazy" />
+                  <img src={src} alt={`${project.title} wireframe ${i + 1}`} loading="lazy" decoding="async" />
                 </figure>
               ))}
             </div>
@@ -353,7 +353,7 @@ export default function CaseStudyReader({
               {project.designs.map((src, i) => (
                 <div key={src + i} className="csr-ui-shot">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={src} alt={`${project.title} UI ${i + 1}`} loading="lazy" />
+                  <img src={src} alt={`${project.title} UI ${i + 1}`} loading="lazy" decoding="async" />
                 </div>
               ))}
             </div>
@@ -414,7 +414,7 @@ export default function CaseStudyReader({
               {project.gallery.map((src, i) => (
                 <figure key={src + i} className="csr-gitem">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={src} alt={`${project.title} gallery ${i + 1}`} loading="lazy" />
+                  <img src={src} alt={`${project.title} gallery ${i + 1}`} loading="lazy" decoding="async" />
                 </figure>
               ))}
             </div>

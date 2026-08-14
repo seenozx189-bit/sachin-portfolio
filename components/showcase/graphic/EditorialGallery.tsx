@@ -53,17 +53,27 @@ export default function EditorialGallery({
             overwrite: true,
           }),
       });
-
-      // Subtle scroll parallax on the imagery (imgs are scaled to cover).
-      if (enableParallax) parallax(gsap.utils.toArray('.gfx-card__img'), 1.2);
     }, rootRef);
 
-    // One refresh after first paint so triggers use correct (post-layout)
-    // positions once the lazy images have reserved their space.
-    const id = requestAnimationFrame(() => ScrollTrigger.refresh());
+    // Parallax creates one scrubbed ScrollTrigger PER image (up to ~25 on
+    // this page) — each one reads layout to compute its start/end. Doing
+    // that synchronously in the mount effect (before first paint) is what
+    // caused the initialization stutter. Deferring it one frame lets the
+    // gallery paint first; the effect itself is unchanged, just not on the
+    // critical path anymore.
+    let killParallax: (() => void) | undefined;
+    const rafId = requestAnimationFrame(() => {
+      if (enableParallax) {
+        killParallax = parallax(gsap.utils.toArray('.gfx-card__img'), 1.2);
+      }
+      // Refresh after first paint so triggers (reveal + parallax) use
+      // correct post-layout positions once the lazy images reserve space.
+      ScrollTrigger.refresh();
+    });
 
     return () => {
-      cancelAnimationFrame(id);
+      cancelAnimationFrame(rafId);
+      killParallax?.();
       ctx.revert();
     };
   }, [projects.length]);

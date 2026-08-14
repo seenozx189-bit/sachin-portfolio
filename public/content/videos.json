@@ -3,7 +3,7 @@
     "title": "Video Editing",
     "subtitle": "Stories in motion",
     "intro": "Cinematic edits, reels and teasers — rhythm, grade and cut engineered for the feed and the big screen.",
-    "heroReel": "/videos/video-01/video.mp4"
+    "heroReel": "/videos/video-01/preview.mp4"
   },
   "projects": [
     {
@@ -12,7 +12,7 @@
       "client": "",
       "category": "",
       "cover": "/videos/video-01/cover.jpg",
-      "preview": "/videos/video-01/video.mp4",
+      "preview": "/videos/video-01/preview.mp4",
       "video": "/videos/video-01/video.mp4",
       "description": "",
       "duration": "0:25",
@@ -27,7 +27,7 @@
       "client": "",
       "category": "",
       "cover": "/videos/video-02/cover.jpg",
-      "preview": "/videos/video-02/video.mp4",
+      "preview": "/videos/video-02/preview.mp4",
       "video": "/videos/video-02/video.mp4",
       "description": "",
       "duration": "0:15",
@@ -42,7 +42,7 @@
       "client": "",
       "category": "",
       "cover": "/videos/video-03/cover.jpg",
-      "preview": "/videos/video-03/video.mp4",
+      "preview": "/videos/video-03/preview.mp4",
       "video": "/videos/video-03/video.mp4",
       "description": "",
       "duration": "0:24",
@@ -57,7 +57,7 @@
       "client": "",
       "category": "",
       "cover": "/videos/video-04/cover.jpg",
-      "preview": "/videos/video-04/video.mp4",
+      "preview": "/videos/video-04/preview.mp4",
       "video": "/videos/video-04/video.mp4",
       "description": "",
       "duration": "0:27",
@@ -72,7 +72,7 @@
       "client": "",
       "category": "",
       "cover": "/videos/video-05/cover.jpg",
-      "preview": "/videos/video-05/video.mp4",
+      "preview": "/videos/video-05/preview.mp4",
       "video": "/videos/video-05/video.mp4",
       "description": "",
       "duration": "0:26",

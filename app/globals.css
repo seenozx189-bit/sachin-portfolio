@@ -714,6 +714,26 @@ main {
   justify-self: end;
 }
 
+/* Whole-row navigation. Invisible overlay so the row's exact visual design
+   (typography, spacing, hover, numbering, colors) is untouched — only click
+   and keyboard focus are added. */
+.timeline-row-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Row 03 splits its title into two independent destinations (Graphic Design
+   vs Video Editing) — inline links matching the h3's exact typography/color,
+   no visible link styling, so the row's design is unchanged. */
+.timeline-row-inline-link {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
 /* Skills */
 .expertise-grid {
   display: grid;
@@ -1297,7 +1317,9 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10000;
+  /* Keep in sync with app/showcase.css — must stay above every overlay
+     (.loader is the highest at 10050). */
+  z-index: 10060;
   pointer-events: none;
   opacity: 0;
   border-radius: 50%;
@@ -2478,6 +2500,13 @@ main {
   aspect-ratio: 1.35;
   overflow: hidden;
   background: var(--surface);
+}
+
+/* Opt-in per project (via `galleryFit: 'contain'`) for artwork whose aspect
+   ratio shouldn't be cropped to the fixed 1.35 tile — e.g. portrait tee
+   mockups. Other projects keep the default `cover` crop. */
+.case-gallery__tile--contain img {
+  object-fit: contain;
 }
 
 .next-project {

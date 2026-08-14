@@ -8,12 +8,10 @@ import type { RailSlot, VideoProject } from './types';
 export default function VideoCard({
   project,
   slot,
-  index,
   onOpen,
 }: {
   project: VideoProject;
   slot: RailSlot;
-  index: number;
   onOpen: (project: VideoProject, el: HTMLElement) => void;
 }) {
   const innerRef = useRef<HTMLButtonElement>(null);
@@ -48,7 +46,6 @@ export default function VideoCard({
             mode="hover"
             active={hover}
             sizes="(max-width: 760px) 90vw, 46vw"
-            priority={index < 2}
           />
           <span className="vc-dur">{project.duration}</span>
           <span className="vc-progress" aria-hidden="true"><span /></span>

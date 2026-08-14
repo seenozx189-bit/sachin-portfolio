@@ -57,8 +57,8 @@ export default function ArtworkCard({
             fill
             sizes="(max-width: 760px) 90vw, 55vw"
             className="gfx-card__img"
-            loading={index < 2 ? undefined : 'lazy'}
-            priority={index < 2}
+            loading={index === 0 ? undefined : 'lazy'}
+            priority={index === 0}
           />
           <span className="gfx-card__num">{String(index + 1).padStart(2, '0')}</span>
         </div>
